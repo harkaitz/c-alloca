@@ -16,6 +16,6 @@ install-man: ./doc/asprintfa.3.md
 ## -- license --
 install: install-license
 install-license: LICENSE
-	mkdir -p $(DESTDIR)$(PREFIX)/share/c-alloca
-	cp LICENSE $(DESTDIR)$(PREFIX)/share/c-alloca
+	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-alloca
+	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-alloca
 ## -- license --
