@@ -7,7 +7,7 @@ all:
 install: 
 	mkdir -p $(DESTDIR)$(PREFIX)/include/str
 	cp $(HEADERS) $(DESTDIR)$(PREFIX)/include/str
-
+clean:
 ## -- manpages --
 ifneq ($(PREFIX),)
 MAN_3=./doc/asprintfa.3 
