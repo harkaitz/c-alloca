@@ -2,9 +2,9 @@
 
 Usefull functions for C that use the stack.
 
-- asprintfa : Like sprintf but to the stack. [manpage](./doc/asprintfa.3.md)
-- strdupa : Like strdup but to the stack. [./str/strdupa.h](./str/strdupa.h)
-- strcata : Concatenate strings in the stack. [./str/strcata.h](./str/strcata.h)
+- *asprintfa()* : Like sprintf but outputs to the stack. [./str/asprintfa.h](./str/asprintfa.h) [manpage](./doc/asprintfa.3.md)
+- *strdupa()* : Like strdup but to the stack. [./str/strdupa.h](./str/strdupa.h)
+- *strcata()* : Concatenate strings in the stack. [./str/strdupa.h](./str/strcata.h)
 
 Example:
 
