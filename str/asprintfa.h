@@ -1,6 +1,14 @@
 #ifndef STR_ASPRINTFA_H
 #define STR_ASPRINTFA_H
 
+#include <string.h>
+#include <stdio.h>
+#include <alloca.h>
+
+#ifdef __GNUC__
+#  pragma GCC diagnostic ignored "-Wpedantic" /* ISO-C Doesn't allow ({}). */
+#endif
+
 #define asprintfa(FMT, ...) ({                                          \
             char *__buf__;                                              \
             __buf__ = alloca(1 + snprintf(NULL, 0, FMT, __VA_ARGS__));  \
