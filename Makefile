@@ -21,7 +21,8 @@ endif
 ifneq ($(PREFIX),)
 install: install-license
 install-license: LICENSE
-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-alloca
-	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-alloca
+	@echo 'I share/doc/c-alloca/LICENSE'
+	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-alloca
+	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-alloca
 endif
 ## -- license --
