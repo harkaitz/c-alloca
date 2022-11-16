@@ -4,10 +4,13 @@ HEADERS =str/asprintfa.h str/strdupa.h
 
 ## -------------
 all:
-install: 
-	mkdir -p $(DESTDIR)$(PREFIX)/include/str
-	cp $(HEADERS) $(DESTDIR)$(PREFIX)/include/str
+	@true
+install:
+	@echo 'I include/str/ $(HEADERS)'
+	@mkdir -p $(DESTDIR)$(PREFIX)/include/str
+	@cp $(HEADERS) $(DESTDIR)$(PREFIX)/include/str
 clean:
+	@true
 ## -- manpages --
 install: install-man3
 install-man3:
@@ -17,11 +20,9 @@ install-man3:
 	@cp ./doc/asprintfa.3 $(DESTDIR)$(PREFIX)/share/man/man3
 ## -- manpages --
 ## -- license --
-ifneq ($(PREFIX),)
 install: install-license
 install-license: LICENSE
 	@echo 'I share/doc/c-alloca/LICENSE'
 	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-alloca
 	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-alloca
-endif
 ## -- license --
