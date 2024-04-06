@@ -1,0 +1,1 @@
+Implementations of sprintf and strdup that use the stack instead of the heap.
